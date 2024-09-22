@@ -1,0 +1,9 @@
+<h1>{{ post.title }}</h1>
+<small>by {{ post.author.first_name }}
+    {{ post.author.last_name|make_list|first }}
+</small>
+<hr />
+<br />
+{{ post.body }}
+<br /><br />
+<a href="{% url 'home' %}">Back</a>
